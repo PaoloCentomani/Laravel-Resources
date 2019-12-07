@@ -4,8 +4,13 @@ Resources for the [Laravel Boilerplate](https://github.com/PaoloCentomani/Larave
 
 ## Features
 
+* Code snippets
 * Vue.js components
 * Affinity Designer templates
+
+## Code Snippets
+
+* Support e-mails
 
 ## Vue.js Components
 
