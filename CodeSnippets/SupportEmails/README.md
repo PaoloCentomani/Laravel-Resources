@@ -1,4 +1,8 @@
-# Contact Form
+# Support Emails
+
+A simple contact form.
+
+## Installation
 
 Install the required dependencies:
 

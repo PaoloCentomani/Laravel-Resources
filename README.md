@@ -4,7 +4,7 @@ Resources for the [Laravel Boilerplate](https://github.com/PaoloCentomani/Larave
 
 ## Features
 
-* Code snippets
+* Useful code snippets
 * Vue.js components
 * Affinity Designer templates
 
@@ -15,4 +15,5 @@ Resources for the [Laravel Boilerplate](https://github.com/PaoloCentomani/Larave
 ## Vue.js Components
 
 * Google [Places Autocomplete](https://developers.google.com/places/web-service/autocomplete)
-* [Chart.js](https://www.chartjs.org/) Line Graph
+* Google [Maps](https://developers.google.com/maps/documentation/javascript)
+* [Chart.js](https://www.chartjs.org) Line Graph
