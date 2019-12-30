@@ -13,7 +13,7 @@ return [
     */
 
     'support' => [
-        'subject' => 'Richiesta di supporto da :name',
+        'subject' => 'Support request from :name',
         'success' => 'Your message was sent!',
 
         'fields' => [

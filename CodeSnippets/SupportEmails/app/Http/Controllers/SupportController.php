@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers;
+
 use App\Http\Requests\StoreSupport;
 use App\Mail\SupportStored;
 use Illuminate\Support\Facades\Mail;
@@ -39,8 +41,8 @@ class SupportController extends Controller
     {
         Mail::send(new SupportStored($request));
 
-        flash()->success('messages.support.success');
+        flash()->success(__('messages.support.success'));
 
-        return back();
+        return redirect()->route('home');
     }
 }

@@ -4,11 +4,10 @@ namespace App\Mail;
 
 use App\Http\Requests\StoreSupport;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SupportStored extends Mailable implements ShouldQueue
+class SupportStored extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -40,6 +39,6 @@ class SupportStored extends Mailable implements ShouldQueue
         return $this->to(config('mail.from.address'), config('mail.from.name'))
                     ->replyTo($this->request->email, $this->request->name)
                     ->subject(__('messages.support.subject', $this->request->name))
-                    ->view('emails.support');
+                    ->markdown('emails.support');
     }
 }

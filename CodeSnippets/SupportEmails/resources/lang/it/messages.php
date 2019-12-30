@@ -17,7 +17,7 @@ return [
         'success' => 'Il tuo messaggio è stato inviato!',
 
         'fields' => [
-            'name' => 'Nome e Cognome',
+            'name' => 'Nome e cognome',
             'message' => 'Messaggio',
         ],
 

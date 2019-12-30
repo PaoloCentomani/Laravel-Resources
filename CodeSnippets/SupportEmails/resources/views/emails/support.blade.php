@@ -1,8 +1,10 @@
-<p>{{ $request->message }}</p>
+@component('mail::message')
+{{ $request->message }}
 
-<hr>
-
-<div style="font-size: 0.85rem; color: #999;">
-    <p>Inviato da <strong>{{ $request->name }}</strong> ({{ $request->email }}) il {{ now()->format(config('boilerplate.time.default')) }}</p>
-    <p>IP: {{ $request->ip() }} – Browser: {{ $request->userAgent() }}</p>
-</div>
+@slot('subcopy')
+    <strong>Rispondi direttamente a questa e-mail.</strong>
+    Inviato da {{ $request->name }} ({{ $request->email }}) il {{ now()->format(config('boilerplate.time.default')) }} –
+    @auth ID: {{ auth()->user()->id }} – @endauth
+    IP: {{ $request->ip() }} – Browser: {{ $request->userAgent() }}
+@endslot
+@endcomponent

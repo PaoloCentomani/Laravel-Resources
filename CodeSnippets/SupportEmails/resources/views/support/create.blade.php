@@ -42,10 +42,10 @@
                 </div>
 
                 {{-- Message --}}
-                <div class="form-group">
+                <div class="form-group required">
                     <label for="message">{{ __('messages.support.fields.message') }}</label>
 
-                    <textarea id="message" class="form-control @error('message') is-invalid @enderror" name="message">{{ old('message') }}</textarea>
+                    <textarea id="message" class="form-control @error('message') is-invalid @enderror" name="message" rows="5">{{ old('message') }}</textarea>
 
                     @error('message')
                         <div class="invalid-feedback" role="alert">
