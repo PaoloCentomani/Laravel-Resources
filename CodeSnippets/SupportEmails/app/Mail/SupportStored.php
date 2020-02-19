@@ -37,8 +37,8 @@ class SupportStored extends Mailable
     public function build()
     {
         return $this->to(config('mail.from.address'), config('mail.from.name'))
-                    ->replyTo($this->request->email, $this->request->name)
-                    ->subject(__('messages.support.subject', $this->request->name))
-                    ->markdown('emails.support');
+            ->replyTo($this->request->input('email'), $this->request->input('name'))
+            ->subject(__('messages.support.subject', ['name' => $this->request->input('name')]))
+            ->markdown('emails.support');
     }
 }

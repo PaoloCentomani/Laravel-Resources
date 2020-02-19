@@ -9,7 +9,7 @@
     </h1>
 
     {{-- Form --}}
-    <form method="POST" action="{{ route('support.store') }}">
+    <form method="POST" action="{{ route('support.store') }}" v-submit>
         @csrf
         @honeypot
 
