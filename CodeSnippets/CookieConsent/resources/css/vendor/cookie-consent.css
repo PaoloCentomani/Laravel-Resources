@@ -1,0 +1,42 @@
+.cookie-consent {
+    @apply fixed bottom-0 flex items-center justify-center w-full p-3 text-center text-white bg-blue-600 cursor-default;
+    box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.5s;
+
+    span {
+        @apply flex-1 text-left;
+
+        a {
+            @apply font-semibold border-b border-dashed border-white;
+        }
+    }
+
+    button {
+        @apply px-3 font-bold text-2xl;
+
+        &:focus {
+            @apply outline-none;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+@screen md {
+    .cookie-consent {
+        span {
+            @apply text-center;
+        }
+
+        button {
+            @apply px-6;
+        }
+    }
+}

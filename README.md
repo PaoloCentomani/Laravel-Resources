@@ -10,6 +10,7 @@ Resources for the [Laravel Boilerplate](https://github.com/PaoloCentomani/Larave
 
 ## Code Snippets
 
+* Cookie-consent banner
 * Support e-mails
 
 ## Vue.js Components
